@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Sidebar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">My Website</div>
+        <div class="hamburger" onclick="toggleSidebar()">☰</div>
+    </header>
+    <div class="container">
+        <nav class="sidebar">
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section class="intro">
+                <h1>Welcome to My Website</h1>
+                <p>This is a simple responsive layout using CSS Grid.</p>
+            </section>
+            <section class="content">
+                <h2>About Us</h2>
+                <p>We offer a range of services to help you achieve the results you’re after.</p>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>© 2024 My Website. All rights reserved.</p>
+    </footer>
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
